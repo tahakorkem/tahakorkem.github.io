@@ -1,0 +1,27 @@
+:root {
+  --bg: #00b4ff;
+  --t: white;
+}
+
+body {
+  margin: 0;
+}
+
+.center {
+  margin: auto;
+  background: var(--bg);
+  height: 100vh;
+  position: relative;
+}
+
+.t {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 48px;
+  margin: 0;
+  color: var(--t);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
