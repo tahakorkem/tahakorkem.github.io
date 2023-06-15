@@ -33,12 +33,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            th: '#00b4ff',
+          }
+        },
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
 
-<div class="container">
-  <div class="t">
+<div class="bg-th flex items-center justify-center h-full">
+  <div class="flex flex-col text-5xl leading-normal text-center text-white select-none">
     <span>#</span>
     <span>TAHA KÖRKEM</span>
     <span>#</span>
