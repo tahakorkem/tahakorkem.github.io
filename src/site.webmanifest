@@ -1,12 +1,11 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Taha Körkem",
+  "name": "Taha Körkem",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
+  "start_url": "/",
   "theme_color": "#00b4ff"
 }
