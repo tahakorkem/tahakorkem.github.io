@@ -3,25 +3,28 @@
   --t: white;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.center {
-  margin: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: var(--bg);
-  height: 100vh;
-  position: relative;
+  height: 100%;
 }
 
 .t {
+  text-align: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 48px;
   margin: 0;
   color: var(--t);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
   user-select: none;
 }
