@@ -3,3 +3,82 @@ html, body {
   padding: 0;
   height: 100%;
 }
+
+.y {
+  transition: all 0.75s ease-in-out, border 0.75s ease-in-out 0.75s;
+}
+
+.z {
+  transition: height 0s ease-in-out 0.75s, border 0s 0.75s ease-in-out, opacity 0.75s ease-in-out;
+}
+
+.th {
+  transition: flex 0.75s ease-in-out, letter-spacing 0.75s ease-in-out;
+}
+
+.desc {
+  /*transition: all 0.75s 0.75s ease-in-out;*/
+  animation: desc 2.5s ease-in-out 1.25s infinite;
+}
+
+.desc:hover {
+
+}
+
+.desc:before {
+  content: "Software Enthusiast";
+  animation: desc-content 10s ease-in-out 2.5s infinite;
+}
+
+@keyframes desc {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15%);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-15%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes desc-content {
+  0%, 100% {
+    content: "Software Enthusiast";
+  }
+  25% {
+    content: "Android Developer";
+  }
+  50% {
+    content: "Web Developer";
+  }
+  75% {
+    content: "Designer";
+  }
+}
+
+.animate-swing {
+  animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+}

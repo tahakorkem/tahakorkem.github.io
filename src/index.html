@@ -34,6 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
 
+  <script src="js/main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -45,7 +46,13 @@
         },
         fontFamily: {
           sans: ['Plus Jakarta Sans', 'sans-serif'],
-        }
+        },
+        borderWidth: {
+          DEFAULT: '1px',
+          '0': '0',
+          '2': '2px',
+          '3': '3px',
+        },
       }
     }
   </script>
@@ -53,12 +60,23 @@
 
 <body>
 
-<div class="bg-th flex items-center justify-center h-full">
-  <div class="flex flex-col md:flex-row p-4 text-5xl leading-normal text-center text-white select-none">
-    <span>#</span>
-    <span>TAHA KÖRKEM</span>
-    <span>#</span>
+<div class="relative bg-th h-full">
+  <div
+    class="y absolute top-1/2 -translate-y-1/2 flex flex-col md:flex-row gap-5 w-full items-center justify-center p-3 md:p-4 text-5xl text-center text-white border-b-3 border-b-white border-opacity-0 select-none">
+    <span class="hash">#</span>
+    <span class="th leading-tight">TAHA KÖRKEM</span>
+    <span class="hash">#</span>
   </div>
+  <div
+    class="desc hidden opacity-0 absolute left-0 right-0 top-0 bottom-0 m-auto h-fit text-center text-white text-4xl leading-normal flex flex-row gap-3 justify-center items-center p-4 select-none">
+        <button class="desc-b hidden w-12 h-10 overflow-hidden border-2 text-base border-white text-white hover:bg-white hover:text-black rounded-full px-3 select-none">
+          >
+        </button>
+  </div>
+  <button
+    class="z h-10 animate-swing overflow-hidden absolute bottom-8 w-64 right-0 left-0 m-auto border-2 border-white text-base text-white hover:bg-white hover:text-black rounded-full px-3 select-none">
+    Start
+  </button>
 </div>
 
 </body>
