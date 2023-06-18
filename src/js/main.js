@@ -35,6 +35,9 @@ const start = () => {
   hashes.forEach((hash) => {
     hash.classList.add('hidden')
     hash.classList.add('md:block')
+    hash.classList.remove('md:h-16')
+    hash.classList.remove('h-12')
+    hash.classList.add('h-9')
   })
   desc.classList.remove('hidden')
 }

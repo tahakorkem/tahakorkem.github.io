@@ -16,6 +16,10 @@ html, body {
   transition: flex 0.75s ease-in-out, letter-spacing 0.75s ease-in-out;
 }
 
+.hash {
+  transition: height 0.75s ease-in-out;
+}
+
 .desc {
   /*transition: all 0.75s 0.75s ease-in-out;*/
   animation: desc 2.5s ease-in-out 1.25s infinite;
