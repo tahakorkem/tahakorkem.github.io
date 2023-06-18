@@ -26,11 +26,11 @@ html, body {
 }
 
 .desc-b {
-  transition: opacity 0.25s ease-in-out 0s, width 0.25s ease-in-out 0.25s, padding 0.25s ease-in-out 0.25s;
+  transition: opacity 0.25s ease-in-out 0s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, padding 0.25s ease-in-out 0.25s;
 }
 
 .desc:hover .desc-b {
-  transition: opacity 0.5s ease-in-out 0.25s, width 0.25s ease-in-out, padding 0.25s ease-in-out;
+  transition: opacity 0.5s ease-in-out 0.25s, width 0.25s ease-in-out, height 0.25s ease-in-out, padding 0.25s ease-in-out;
 }
 
 .desc:before {
@@ -38,7 +38,7 @@ html, body {
   animation: desc-content 10s ease-in-out 2.5s infinite;
 }
 
-.desc:hover, .desc:hover:before {
+.desc:hover, .desc:hover:before, .desc:active, .desc:active:before {
   animation-play-state: paused;
 }
 

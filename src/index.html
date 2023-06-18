@@ -91,10 +91,10 @@
     </svg>
   </div>
   <div
-    class="group desc hidden opacity-0 absolute left-0 right-0 top-0 bottom-0 m-auto h-fit text-center text-white text-4xl leading-normal flex flex-row justify-center items-center p-4 select-none">
-    <div class="desc-b overflow-hidden flex opacity-0 w-0 group-hover:w-20 group-hover:opacity-100 group-hover:ps-6">
+    class="group desc hidden opacity-0 absolute left-0 right-0 top-0 bottom-0 m-auto h-fit text-center text-white text-4xl leading-normal flex flex-col md:flex-row justify-center items-center p-4 select-none">
+    <div class="desc-b overflow-hidden flex opacity-0 w-0 h-0 group-hover:w-20 group-hover:h-14 md:group-hover:h-10 group-hover:opacity-100 group-hover:pt-4 md:group-hover:ps-6 md:group-hover:pt-0 group-active:w-20 group-active:h-14 md:group-active:h-10 group-active:opacity-100 group-active:pt-4 md:group-active:ps-6 md:group-active:pt-0">
       <button
-        class="transition-button w-full px-3 h-10 border-2 text-base border-white text-white hover:bg-white hover:text-black rounded-full select-none">
+        class="transition-button w-full h-full px-3 h-10 border-2 text-base border-white text-white hover:bg-white hover:text-black rounded-full select-none">
         >
       </button>
     </div>
@@ -106,7 +106,13 @@
     </button>
   </div>
   <div class="info-text hidden opacity-0 animate absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-center select-none">
-    Hover the title to show details
+    <span class="hidden md:block">
+      Hover the text to show details
+    </span>
+    <span class="block md:hidden">
+      Touch the text to show details
+    </span>
+
   </div>
   </div>
 
