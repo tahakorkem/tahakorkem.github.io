@@ -73,16 +73,3 @@ html, body {
     content: "Designer";
   }
 }
-
-.animate-swing {
-  animation: swing 2s ease-in-out infinite;
-}
-
-@keyframes swing {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(25%);
-  }
-}

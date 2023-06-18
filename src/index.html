@@ -42,6 +42,16 @@
         extend: {
           colors: {
             th: '#00b4ff',
+          },
+          keyframes: {
+            swing: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(25%)' },
+            },
+
+          },
+          animation: {
+            swing: 'swing 1.5s ease-in-out infinite',
           }
         },
         fontFamily: {
