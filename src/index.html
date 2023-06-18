@@ -52,7 +52,10 @@
           },
           animation: {
             swing: 'swing 1.5s ease-in-out infinite',
-          }
+          },
+          transitionProperty: {
+            'button': 'background-color, color',
+          },
         },
         fontFamily: {
           sans: ['Plus Jakarta Sans', 'sans-serif'],
@@ -88,17 +91,24 @@
     </svg>
   </div>
   <div
-    class="desc hidden opacity-0 absolute left-0 right-0 top-0 bottom-0 m-auto h-fit text-center text-white text-4xl leading-normal flex flex-row gap-3 justify-center items-center p-4 select-none">
+    class="group desc hidden opacity-0 absolute left-0 right-0 top-0 bottom-0 m-auto h-fit text-center text-white text-4xl leading-normal flex flex-row justify-center items-center p-4 select-none">
+    <div class="desc-b overflow-hidden flex opacity-0 w-0 group-hover:w-20 group-hover:opacity-100 group-hover:ps-6">
+      <button
+        class="transition-button w-full px-3 h-10 border-2 text-base border-white text-white hover:bg-white hover:text-black rounded-full select-none">
+        >
+      </button>
+    </div>
+  </div>
+  <div class="z absolute bottom-8 w-64 h-10 right-0 left-0 m-auto animate-swing overflow-hidden">
     <button
-      class="desc-b hidden w-12 h-10 overflow-hidden border-2 text-base border-white text-white hover:bg-white hover:text-black rounded-full px-3 select-none">
-      >
+      class="transition-button w-full h-full border-2 border-white text-base text-white hover:bg-white hover:text-black rounded-full px-3 select-none">
+      Start
     </button>
   </div>
-  <button
-    class="z h-10 animate-swing overflow-hidden absolute bottom-8 w-64 right-0 left-0 m-auto border-2 border-white text-base text-white hover:bg-white hover:text-black rounded-full px-3 select-none">
-    Start
-  </button>
-</div>
+  <div class="info-text hidden opacity-0 animate absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-center select-none">
+    Hover the title to show details
+  </div>
+  </div>
 
 </body>
 

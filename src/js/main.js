@@ -5,6 +5,7 @@ let z;
 let th;
 let hashes;
 let desc;
+let infoText;
 
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("dom is ready!")
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   th = document.querySelector('.th')
   hashes = document.querySelectorAll('.hash')
   desc = document.querySelector('.desc')
+  infoText = document.querySelector('.info-text')
   z.addEventListener('click', function() {
     start()
   })
@@ -40,4 +42,6 @@ const start = () => {
     hash.classList.add('h-9')
   })
   desc.classList.remove('hidden')
+  infoText.classList.remove('hidden')
+  infoText.classList.add('animate-info-text')
 }
